@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danil - Creative Developer</title>
+    <link rel="stylesheet" href="styles.min.css">
+
+    <!-- CDN Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Canvas -->
+    <canvas id="background-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Danil</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">Hi, I'm</span>
+                <span class="line gradient-text">Danil</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="typed-text"></span>
+                <span class="cursor-blink">|</span>
+            </div>
+            <button class="cta-button" data-scroll-to="#projects">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="floating-elements">
+            <div class="floating-element" data-speed="2"></div>
+            <div class="floating-element" data-speed="3"></div>
+            <div class="floating-element" data-speed="1.5"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a developer who turns ideas into reliable, efficient code. With a solid grasp of modern web
+                        technologies and attention to detail, I build digital products that are both practical and
+                        well-designed.</p>
+                    <p>I focus on creating interactive websites, web applications, and user experiences that are
+                        responsive, fast, and easy to use.</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="skill-item" data-tilt>
+                        <i class="fab fa-aws"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://raw.githubusercontent.com/DanilSidorov8625/PEX-Dubai-Landing-Page/main/Preview-AE.avif"
+                            alt="PEX Dubai Landing Page">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://danilsidorov8625.github.io/PEX-Dubai-Landing-Page/"
+                                    class="project-link live-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/DanilSidorov8625/PEX-Dubai-Landing-Page"
+                                    class="project-link code-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>PEX Dubai Landing Page</h3>
+                        <p>
+                            Responsive landing page for PEX with analytics funnels and server-side deployment (backend
+                            code not included).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://github.com/DanilSidorov8625/OMI/raw/main/Preview-OMI.avif"
+                            alt="One Million Images Grid">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://omnaris.xyz/" class="project-link live-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/DanilSidorov8625/OMI" class="project-link code-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>OMI – One Million Images</h3>
+                        <p>A collaborative 1,000 × 1,000 image grid built with vanilla JS and Node.js, featuring
+                            real-time uploads (Socket.io), Cloudflare R2 storage, and custom logging/caching for maximum
+                            performance.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://github.com/DanilSidorov8625/Scans/raw/main/Preview-Scans.avif"
+                            alt="Warehouse Scanning Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://scans.omnaris.xyz/" class="project-link live-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="https://github.com/DanilSidorov8625/Scans" class="project-link code-link"
+                                    target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Scans – Warehouse Scanning App</h3>
+                        <p>A fast, role-based warehouse scanning platform (Node.js, Express, EJS) handling hundreds of
+                            daily scans with CSV/email exports and live analytics, all hosted on a $5/month Linode.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Legacy PHP Contract Work">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link live-link disabled"
+                                    style="pointer-events: none; opacity: 0.5;">
+                                    <i class="fas fa-lock"></i>
+                                    Private
+                                </a>
+                                <a href="#" class="project-link code-link disabled"
+                                    style="pointer-events: none; opacity: 0.5;">
+                                    <i class="fas fa-code"></i>
+                                    Private Repo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Contract Work – Legacy PHP System</h3>
+                        <p>Ongoing contract role modernizing a custom PHP codebase: refactoring legacy routing, auth,
+                            and mail systems, integrating Composer packages, and improving long-term maintainability
+                            without breaking existing workflows.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/1181251/pexels-photo-1181251.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="React Native App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://apps.apple.com/app/id0000000000" class="project-link live-link"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    App Store
+                                </a>
+                                <a href="#" class="project-link code-link disabled"
+                                    style="pointer-events: none; opacity: 0.5;">
+                                    <i class="fas fa-lock"></i>
+                                    Private Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Contract Work - React Native Expo App</h3>
+                        <p>Large-scale mobile app in progress — 40+ screens, 50+ API endpoints, full i18n support,
+                            analytics, end-to-end testing, and EAS updates. Built with Expo, Redux, SQLite, PHP, MySQL,
+                            targeting production release.</p>
+                    </div>
+                </div>
+                <div class="project-card" data-tilt>
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/7054785/pexels-photo-7054785.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="VibeSearch Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link live-link disabled"
+                                    style="pointer-events: none; opacity: 0.5;">
+                                    <i class="fas fa-hourglass-half"></i>
+                                    In Progress
+                                </a>
+                                <a href="#" class="project-link code-link disabled"
+                                    style="pointer-events: none; opacity: 0.5;">
+                                    <i class="fas fa-lock"></i>
+                                    Private Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>VibeSearch</h3>
+                        <p>In-progress semantic search engine that scrapes, vectorizes, and indexes fanfiction and media
+                            content using rented H100 GPUs. Built with LibSQL, Deno, and the AHA stack (Astro, HTMX,
+                            Alpine.js) for a lightweight and reactive frontend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always excited to work on new projects and collaborate with creative people. Let's bring your
+                        ideas to life!</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>danilsidorov8625@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (732) 856-4305</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>NJ, USA</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/DanilSidorov8625" class="social-link" data-tilt>
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/danil-sidorov-844109217/" class="social-link" data-tilt>
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/dvs8625" class="social-link" data-tilt>
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <!-- <a href="#" class="social-link" data-tilt>
+                            <i class="fab fa-dribbble"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="ce487f31-6c51-45c3-8534-53346abcc8aa">
+
+                    <!-- Honeypot Field (Spam Protection) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <!-- Optional redirect on success -->
+                    <!-- <input type="hidden" name="redirect" value="https://yourdomain.com/thanks.html"> -->
+
+                    <button type="submit" class="submit-button">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Danil. All rights reserved.</p>
+            <button class="back-to-top" data-scroll-to="#home">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script src="script.min.js"></script>
+</body>
+
+</html>
