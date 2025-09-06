@@ -18,6 +18,13 @@ export const Projects: React.FC = () => {
       codeUrl: 'https://github.com/DanilSidorov8625/OMI',
     },
     {
+      title: 'PowerScan',
+      description: 'An AI-powered Powerball ticket scanner that uses GPT-4o to extract numbers from uploaded photos (HEIC/JPEG) or manual entry and instantly check for winning combinations.',
+      image: 'https://github.com/DanilSidorov8625/PowerScan/raw/main/Preview-PowerScans.avif', // Replace with actual image if different
+      liveUrl: 'https://powerscan.omnaris.xyz/',
+      codeUrl: 'https://github.com/DanilSidorov8625/PowerScan',
+    },
+    {
       title: 'Scans – Warehouse Scanning App',
       description: 'A fast, role-based warehouse scanning platform (Node.js, Express, EJS) handling hundreds of daily scans with CSV/email exports and live analytics, all hosted on a $5/month Linode.',
       image: 'https://github.com/DanilSidorov8625/Scans/raw/main/Preview-Scans.avif',
